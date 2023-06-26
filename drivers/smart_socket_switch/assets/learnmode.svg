@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+     width="960px" height="960px" viewBox="0 0 960 960" enable-background="new 0 0 960 960" xml:space="preserve">
+    <style type="text/css">
+        		#pair {
+        			animation: fillpulse 10s infinite;
+        		}
+
+        		@keyframes fillpulse {
+        			0%, 10%, 80%, 90%, 100% {
+        				fill: rgba(0,120,204,0);
+        			}
+        			15%, 75%, 65%, 95% {
+        				fill: rgba(0,120,204,1);
+        			}
+        		}
+        </style>
+<g>
+	<polygon fill="none" stroke="#000000" stroke-width="8" stroke-linejoin="round" stroke-miterlimit="10" points="738.5,831.5
+		221.5,831.5 228,506.9 732,506.9 	"/>
+    <polygon fill="none" stroke="#000000" stroke-width="8" stroke-linejoin="round" stroke-miterlimit="10" points="711.6,455.6
+		248.6,455.6 228,506.7 732.6,506.7 	"/>
+    <path id="pair" fill="none" stroke="#000000" stroke-width="8" stroke-linejoin="round" stroke-miterlimit="10" d="M515,594.5H445
+	c-3.2,0-5.8-2.6-5.8-5.8V562c0-3.2,2.6-5.8,5.8-5.8H515c3.2,0,5.8,2.6,5.8,5.8v26.7C520.7,591.9,518.2,594.5,515,594.5z"/>
+    <rect x="318" y="277.2" fill="none" stroke="#000000" stroke-width="8" stroke-linejoin="round"
+          stroke-miterlimit="10" width="323.9" height="178.4"/>
+    <line stroke="#000000" stroke-width="8" stroke-linejoin="round" stroke-miterlimit="10"
+          x1="376.5" y1="277.2" x2="376.5" y2="135"/>
+    <line stroke="#000000" stroke-width="8" stroke-linejoin="round" stroke-miterlimit="10" x1="411.8"
+          y1="277.2" x2="411.8" y2="135"/>
+    <path fill="none" stroke="#000000" stroke-width="8" stroke-linejoin="round" stroke-miterlimit="10" d="M376.5,135
+			c0-9.7,7.9-17.6,17.6-17.6c9.7,0,17.6,7.9,17.6,17.6"/>
+    <line stroke="#000000" stroke-width="8" stroke-linejoin="round" stroke-miterlimit="10"
+          x1="548.2" y1="277.2" x2="548.2" y2="135"/>
+    <line stroke="#000000" stroke-width="8" stroke-linejoin="round" stroke-miterlimit="10"
+          x1="583.5" y1="277.2" x2="583.5" y2="135"/>
+    <path fill="none" stroke="#000000" stroke-width="8" stroke-linejoin="round" stroke-miterlimit="10" d="M548.2,135
+			c0-9.7,7.9-17.6,17.6-17.6s17.6,7.9,17.6,17.6"/>
+</g>
+</svg>

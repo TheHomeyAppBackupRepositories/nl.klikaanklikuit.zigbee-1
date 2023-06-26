@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1e3" height="1e3" version="1.1" viewBox="0 0 1e3 1e3" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+    #tool {
+      animation: move 8s infinite;
+    }
+
+    @keyframes move {
+      0%, 10%, 90%, 100% {
+        transform: translateX(0px);
+      }
+      15%, 85% {
+        transform: translateX(62px);
+      }
+    }
+</style>
+<g transform="translate(17.377 178.9)" fill="none" stroke="#000">
+    <g transform="translate(297.47 -28.904)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6">
+        <polygon points="655 95 655 125 585 195 115 195 45 125 45 95"/>
+        <rect x="125" y="195" width="450" height="410"/>
+        <line x1="575" x2="125" y1="400" y2="400"/>
+        <path d="m313.5 256.3h73c3.3 0 6 2.7 6 6v73c0 3.3-2.7 6-6 6h-73c-3.3 0-6-2.7-6-6v-73c0-3.3 2.7-6 6-6z"/>
+        <line x1="575" x2="125" y1="503" y2="503"/>
+    </g>
+    <g id="tool">
+        <g transform="rotate(180 485.25 301.62)" stroke-width="10">
+            <rect x="700.73" y="220.19" width="255" height="83" rx="40" ry="40"/>
+            <path d="m609.28 261.69h90"/>
+        </g>
+    </g>
+</g>
+</svg>

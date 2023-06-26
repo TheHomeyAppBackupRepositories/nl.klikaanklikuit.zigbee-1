@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 700 700" xml:space="preserve">
+<g>
+	<polygon fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
+             stroke-miterlimit="10" points="45,95 655,95 655,125 585,195 115,195 45,125"/>
+    <rect x="125" y="195" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
+          stroke-miterlimit="10" width="450" height="410"/>
+    <line fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
+          stroke-miterlimit="10" x1="575" y1="400" x2="125" y2="400"/>
+    <path fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
+          stroke-miterlimit="10"
+          d="M313.5,256.3h73c3.3,0,6,2.7,6,6v73c0,3.3-2.7,6-6,6h-73c-3.3,0-6-2.7-6-6v-73C307.5,259,310.2,256.3,313.5,256.3z"/>
+</g>
+</svg>

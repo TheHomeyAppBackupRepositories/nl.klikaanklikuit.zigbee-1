@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320" height="320" version="1.1" viewBox="0 0 320 320" xml:space="preserve"
+     xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+    #tool {
+      animation: move 10s infinite;
+    }
+
+    @keyframes move {
+      0%, 10%, 60%, 75%, 95%, 100% {
+        transform: translateX(0px);
+      }
+      15%, 55%, 80%, 90% {
+        transform: translateX(-32px);
+      }
+    }
+</style>
+<g transform="translate(-31.426 18.25)">
+	<path d="m166.1 266.7h-102.3c-6.3 0-11.3-5.1-11.3-11.3v-227.3c0-6.3 5.1-11.3 11.3-11.3h102.3c6.3 0 11.3 5.1 11.3 11.3v227.3c0.1 6.3-5 11.3-11.3 11.3z"
+          fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+        <path d="m101.8 39.3c2 0 3.7 1.6 3.7 3.7v25c0 2-1.6 3.7-3.7 3.7h-25c-2 0-3.7-1.6-3.7-3.7v-25c0-2 1.6-3.7 3.7-3.7h25m0-2h-25c-3.1 0-5.7 2.5-5.7 5.7v25c0 3.1 2.5 5.7 5.7 5.7h25c3.1 0 5.7-2.5 5.7-5.7v-25c0-3.1-2.6-5.7-5.7-5.7z"/>
+        <path d="m96.6 45.4c1.6 0 2.8 1.3 2.8 2.8v14.5c0 1.6-1.3 2.8-2.8 2.8h-14.5c-1.6 0-2.8-1.3-2.8-2.8v-14.5c0-1.6 1.3-2.8 2.8-2.8h14.5m0-2h-14.5c-2.7 0-4.8 2.2-4.8 4.8v14.5c0 2.7 2.2 4.8 4.8 4.8h14.5c2.7 0 4.8-2.2 4.8-4.8v-14.5c0-2.6-2.2-4.8-4.8-4.8z"/>
+        <g id="tool">
+    <g transform="matrix(3.6601 0 0 3.6601 143.37 -3453.6)" fill="none" stroke="#000">
+        <rect transform="rotate(45)" x="713.58" y="651.69" width="11.4" height="11.4" rx="2" ry="2"/>
+        <path d="m36.556 973.45h-18.5" stroke-width="1.0116px"/>
+    </g>
+    </g>
+</g>
+</svg>

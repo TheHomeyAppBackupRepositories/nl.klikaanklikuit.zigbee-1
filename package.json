@@ -1,0 +1,34 @@
+{
+  "name": "nl.klikaanklikuit.zigbee",
+  "version": "1.0.0",
+  "description": "This app allows you to connect your KaKu ZigBee Devices to Homey",
+  "main": "app.js",
+  "dependencies": {
+    "homey-log": "^2.0.1",
+    "homey-zigbeedriver": "^1.6.9",
+    "zigbee-clusters": "^1.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-athom": "^2.1.1"
+  },
+  "scripts": {
+    "run": "homey app run",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"drivers/**/*.js\" \"lib/**/*.js\"",
+    "fix": "eslint \"drivers/**/*.js\" \"lib/**/*.js\" --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/athombv/nl.klikaanklikuit.zigbee.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=12.16.1"
+  },
+  "bugs": {
+    "url": "https://github.com/athombv/nl.klikaanklikuit.zigbee/issues"
+  },
+  "homepage": "https://github.com/athombv/nl.klikaanklikuit.zigbee#readme"
+}

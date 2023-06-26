@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="85" height="85" version="1.1" viewBox="-35 925 85 85" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+    #tool {
+      animation: move 10s infinite;
+    }
+
+    @keyframes move {
+      0%, 10%, 60%, 75%, 95%, 100% {
+        transform: translateX(0px);
+      }
+      15%, 55%, 80%, 90% {
+        transform: translateX(-7px);
+      }
+    }
+</style>
+<g transform="translate(.012689 6.9891)">
+    <g transform="translate(-8.3455 .51095)">
+        <g fill="none" stroke="#000" stroke-miterlimit="10" stroke-width=".8">
+            <path d="m-20 967c0 0.3 9 0.5 20 0.5s20-0.2 20-0.5v-32c0 0.3-9 0.5-20 0.5s-20-0.2-20-0.5v32z" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="m22 988.1c0 0.3-9.8 0.5-22 0.5s-22-0.2-22-0.5"/>
+            <path d="m22 931.5c0 0.3-9.8 0.5-22 0.5s-22-0.2-22-0.5c0-0.8 9.8-1.5 22-1.5s22 0.7 22 1.5v58c0 0.3-9.8 0.5-22 0.5s-22-0.2-22-0.5v-58"/>
+        </g>
+        <path d="m2.5 974.8c1.1 0 2 0.9 2 2v5c0 1.1-0.9 2-2 2h-5c-1.1 0-2-0.9-2-2v-5c0-1.1 0.9-2 2-2h5m0-0.5h-5c-1.4 0-2.5 1.1-2.5 2.5v5c0 1.4 1.1 2.5 2.5 2.5h5c1.4 0 2.5-1.1 2.5-2.5v-5c0-1.3-1.1-2.5-2.5-2.5z"/>
+        <path d="m1.5 976.8c0.6 0 1 0.4 1 1v3c0 0.6-0.4 1-1 1h-3c-0.6 0-1-0.4-1-1v-3c0-0.6 0.4-1 1-1h3m0-0.5h-3c-0.8 0-1.5 0.7-1.5 1.5v3c0 0.8 0.7 1.5 1.5 1.5h3c0.8 0 1.5-0.7 1.5-1.5v-3c0-0.8-0.7-1.5-1.5-1.5z"/>
+    </g>
+    <g id="tool">
+        <g transform="matrix(.7537 0 0 .77055 6.7756 225.57)" fill="none" stroke="#000">
+            <rect transform="rotate(45)" x="713.58" y="651.69" width="11.4" height="11.4" rx="2" ry="2"/>
+            <path d="m36.556 973.45h-18.5" stroke-width="1.0116px"/>
+        </g>
+    </g>
+</g>
+</svg>
