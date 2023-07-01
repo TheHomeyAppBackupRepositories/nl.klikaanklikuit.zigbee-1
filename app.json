@@ -1,1 +1,1393 @@
-{"_comment":"This file is generated. Please edit .homeycompose/app.json instead.","id":"nl.klikaanklikuit.zigbee","name":{"en":"Trust Smart Home (Zigbee)","nl":"KlikAanKlikUit (Zigbee)"},"brandColor":"#404245","description":{"en":"Maximize your home comfort","nl":"Voor meer comfort in huis"},"category":["lights"],"tags":{"en":["trust","klikaanklikuit","kaku"],"nl":["trust","klikaanklikuit","kaku"]},"version":"1.4.1","compatibility":">=5.0.0","platforms":["local","cloud"],"sdk":3,"support":"https://homey.app/support","author":{"name":"Athom B.V."},"images":{"large":"/assets/images/large.png","small":"/assets/images/small.png"},"flow":{"triggers":[{"id":"on0","title":{"en":"Bulb 1 - On button was pressed","nl":"Lamp 1 - Aan knop is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"off0","title":{"en":"Bulb 1 - Off button was pressed","nl":"Lamp 1 - Uit knop is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"dim_down0","title":{"en":"Bulb 1 - Lower brightness was pressed","nl":"Lamp 1 - Lagere helderheid is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"dim_up0","title":{"en":"Bulb 1 - Higher brightness was pressed","nl":"Lamp 1 - Hogere helderheid is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"on1","title":{"en":"Bulb 2 - On button was pressed","nl":"Lamp 2 - Aan knop is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"off1","title":{"en":"Bulb 2 - Off button was pressed","nl":"Lamp 2 - Uit knop is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"dim_down1","title":{"en":"Bulb 2 - Lower brightness was pressed","nl":"Lamp 2 - Lagere helderheid is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"dim_up1","title":{"en":"Bulb 2 - Higher brightness was pressed","nl":"Lamp 2 - Hogere helderheid is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"on2","title":{"en":"Bulb 3 - On button was pressed","nl":"Lamp 3 - Aan knop is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"off2","title":{"en":"Bulb 3 - Off button was pressed","nl":"Lamp 3 - Uit knop is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"dim_down2","title":{"en":"Bulb 3 - Lower brightness was pressed","nl":"Lamp 3 - Lagere helderheid is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"dim_up2","title":{"en":"Bulb 3 - Higher brightness was pressed","nl":"Lamp 3 - Hogere helderheid is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"on3","title":{"en":"Bulb 4 - On button was pressed","nl":"Lamp 4 - Aan knop is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"off3","title":{"en":"Bulb 4 - Off button was pressed","nl":"Lamp 4 - Uit knop is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"dim_down3","title":{"en":"Bulb 4 - Lower brightness was pressed","nl":"Lamp 4 - Lagere helderheid is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"dim_up3","title":{"en":"Bulb 4 - Higher brightness was pressed","nl":"Lamp 4 - Hogere helderheid is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"on4","title":{"en":"Bulb 5 - On button was pressed","nl":"Lamp 5 - Aan knop is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"off4","title":{"en":"Bulb 5 - Off button was pressed","nl":"Lamp 5 - Uit knop is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"dim_down4","title":{"en":"Bulb 5 - Lower brightness was pressed","nl":"Lamp 5 - Lagere helderheid is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"dim_up4","title":{"en":"Bulb 5 - Higher brightness was pressed","nl":"Lamp 5 - Hogere helderheid is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"on5","title":{"en":"All bulbs - On button was pressed","nl":"Alle lampen - Aan knop is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"off5","title":{"en":"All bulbs - Off button was pressed","nl":"Alle lampen - Uit knop is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"dim_down5","title":{"en":"All bulbs - Lower brightness was pressed","nl":"Alle lampen - Lagere helderheid is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"dim_up5","title":{"en":"All bulbs - Higher brightness was pressed","nl":"Alle lampen - Hogere helderheid is ingedrukt"},"args":[{"type":"device","name":"device","filter":"driver_id=remote"}]},{"id":"tamper_on","title":{"en":"The housing was opened","nl":"De behuizing is geopend"},"args":[{"type":"device","name":"device","filter":"driver_id=wireless_leakage_sensor"}]},{"id":"tamper_off","title":{"en":"The housing was closed","nl":"De behuizing is gesloten"},"args":[{"type":"device","name":"device","filter":"driver_id=wireless_leakage_sensor"}]}]},"drivers":[{"platforms":["local","cloud"],"images":{"large":"/drivers/remote/assets/images/large.png","small":"/drivers/remote/assets/images/small.png"},"icon":"/drivers/remote/assets/icon.svg","name":{"en":"Remote Control","nl":"Afstandsbediening"},"class":"remote","capabilities":[],"energy":{"batteries":["CR2450"]},"connectivity":["zigbee"],"zigbee":{"manufacturerName":"Trust International B.V.","productId":["ZLL-NonColorController"],"endpoints":{"1":{"clusters":[6,8,4096]}},"learnmode":{"image":"/drivers/remote/assets/learnmode.svg","instruction":{"en":"Press the 0-button for about 20 seconds, until the 5 LEDs blink once. Then press the smart group button until the left, middle and right LEDs start blinking.","nl":"Druk ongeveer 20 seconden op de 0-knop totdat alle 5 LEDs éénmaal knipperen. Druk daarna op de smart-groepsknop tot de linker, middelste en rechter LEDs knipperen."}}},"id":"remote"},{"platforms":["local","cloud"],"images":{"large":"/drivers/smart_dimmable_led_bulb_E14/assets/images/large.png","small":"/drivers/smart_dimmable_led_bulb_E14/assets/images/small.png"},"icon":"/drivers/smart_dimmable_led_bulb_E14/assets/icon.svg","name":{"en":"Dimmable LED Bulb","nl":"Dimbare LED Lamp"},"class":"light","capabilities":["onoff","dim"],"capabilitiesOptions":{"dim":{"opts":{"duration":true}},"onoff":{"setOnDim":false}},"energy":{"approximation":{"usageOn":6,"usageOff":0.5}},"connectivity":["zigbee"],"zigbee":{"manufacturerName":"Trust International B.V.","productId":"ZLL-DimmableLigh","endpoints":{"1":{"clusters":[0,4,6,8]}},"learnmode":{"image":"/drivers/smart_dimmable_led_bulb_E14/assets/icon.svg","instruction":{"en":"Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 5 times quickly. It will flash twice to indicate it has been reset.","nl":"Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."}}},"id":"smart_dimmable_led_bulb_E14"},{"platforms":["local","cloud"],"images":{"large":"/drivers/smart_dimmable_led_bulb_E27/assets/images/large.png","small":"/drivers/smart_dimmable_led_bulb_E27/assets/images/small.png"},"icon":"/drivers/smart_dimmable_led_bulb_E27/assets/icon.svg","name":{"en":"Dimmable LED Bulb","nl":"Dimbare LED Lamp"},"class":"light","capabilities":["onoff","dim"],"capabilitiesOptions":{"dim":{"opts":{"duration":true}},"onoff":{"setOnDim":false}},"energy":{"approximation":{"usageOn":9,"usageOff":0.5}},"connectivity":["zigbee"],"zigbee":{"manufacturerName":"Trust International B.V.","productId":"ZLL-DimmableLigh","endpoints":{"1":{"clusters":[0,4,6,8]}},"learnmode":{"image":"/drivers/smart_dimmable_led_bulb_E27/assets/icon.svg","instruction":{"en":"Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 5 times quickly. It will flash twice to indicate it has been reset.","nl":"Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."}}},"id":"smart_dimmable_led_bulb_E27"},{"platforms":["local","cloud"],"images":{"large":"/drivers/smart_dimmable_led_spot/assets/images/large.png","small":"/drivers/smart_dimmable_led_spot/assets/images/small.png"},"icon":"/drivers/smart_dimmable_led_spot/assets/icon.svg","name":{"en":"Dimmable LED Spot","nl":"Dimbare LED Spot"},"class":"light","capabilities":["onoff","dim"],"capabilitiesOptions":{"dim":{"opts":{"duration":true}},"onoff":{"setOnDim":false}},"energy":{"approximation":{"usageOn":6,"usageOff":0.5}},"connectivity":["zigbee"],"zigbee":{"manufacturerName":"Trust International B.V.","productId":["ZLL-DimmableLigh","ZLL-DimmableLight"],"endpoints":{"1":{"clusters":[0,4,6,8]}},"learnmode":{"image":"/drivers/smart_dimmable_led_spot/assets/icon.svg","instruction":{"en":"Toggle the spot to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the spot by toggling it 5 times quickly. It will flash twice to indicate it has been reset.","nl":"Zet de spot uit en weer aan.\n\nWordt de spot niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de spot aan en uit te zetten. De spot zal twee keer knipperen om aan te geven dat hij is gereset."}}},"id":"smart_dimmable_led_spot"},{"platforms":["local","cloud"],"images":{"large":"/drivers/smart_rgb_tunable_led_bulb_E27/assets/images/large.png","small":"/drivers/smart_rgb_tunable_led_bulb_E27/assets/images/small.png"},"icon":"/drivers/smart_rgb_tunable_led_bulb_E27/assets/icon.svg","name":{"en":"RGB Tunable LED Bulb","nl":"RGB LED Lamp"},"class":"light","capabilities":["onoff","dim","light_hue","light_saturation","light_temperature","light_mode"],"capabilitiesOptions":{"dim":{"opts":{"duration":true}},"light_hue":{"opts":{"duration":true}},"light_saturation":{"opts":{"duration":true}},"light_temperature":{"opts":{"duration":true}},"onoff":{"setOnDim":false}},"energy":{"approximation":{"usageOn":9,"usageOff":0.5}},"connectivity":["zigbee"],"zigbee":{"manufacturerName":"Trust International B.V.","productId":"ZLL-ExtendedColo","endpoints":{"2":{"clusters":[0,4,6,8,768]}},"learnmode":{"image":"/drivers/smart_rgb_tunable_led_bulb_E27/assets/icon.svg","instruction":{"en":"Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 5 times quickly. It will flash twice to indicate it has been reset.","nl":"Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."}}},"id":"smart_rgb_tunable_led_bulb_E27"},{"platforms":["local","cloud"],"images":{"large":"/drivers/smart_rgb_tunable_led_spot/assets/images/large.png","small":"/drivers/smart_rgb_tunable_led_spot/assets/images/small.png"},"icon":"/drivers/smart_rgb_tunable_led_spot/assets/icon.svg","name":{"en":"RGB Tunable LED Spot","nl":"RGB LED Spot"},"class":"light","capabilities":["onoff","dim","light_hue","light_saturation","light_temperature","light_mode"],"capabilitiesOptions":{"dim":{"opts":{"duration":true}},"light_hue":{"opts":{"duration":true}},"light_saturation":{"opts":{"duration":true}},"light_temperature":{"opts":{"duration":true}},"onoff":{"setOnDim":false}},"energy":{"approximation":{"usageOn":6,"usageOff":0.5}},"connectivity":["zigbee"],"zigbee":{"manufacturerName":"Trust International B.V.","productId":"ZLL-ExtendedColo","endpoints":{"2":{"clusters":[0,4,6,8,768]}},"learnmode":{"image":"/drivers/smart_rgb_tunable_led_spot/assets/icon.svg","instruction":{"en":"Toggle the spot to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the spot by toggling it 5 times quickly. It will flash twice to indicate it has been reset.","nl":"Zet de spot uit en weer aan.\n\nWordt de spot niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de spot aan en uit te zetten. De spot zal twee keer knipperen om aan te geven dat hij is gereset."}}},"id":"smart_rgb_tunable_led_spot"},{"platforms":["local","cloud"],"images":{"large":"/drivers/smart_socket_switch/assets/images/large.png","small":"/drivers/smart_socket_switch/assets/images/small.png"},"icon":"/drivers/smart_socket_switch/assets/icon.svg","name":{"en":"Smart Socket Switch","nl":"Slimme Stopcontact Schakelaar"},"class":"socket","capabilities":["onoff"],"connectivity":["zigbee"],"zigbee":{"manufacturerName":"KlikAanKlikUit","productId":["Socket Switch"],"endpoints":{"1":{"clusters":[6],"bindings":[6]}},"learnmode":{"image":"/drivers/smart_socket_switch/assets/learnmode.svg","instruction":{"en":"Press the button on the Socket Switch to pair.\n\nIf this did not happen within a few seconds, press the button more than 6 seconds until the LED starts flashing. Press the button again, the socket switch will switch on and off twice.","nl":"Druk op de knop op de schakelaar om te verbinden.\n\nAls dit niet binnen enkele seconden slaagt, houd dan de knop meer dan 6 seconden ingedrukt totdat de LED begint te knipperen. Druk daarna nogmaals op de knop, waarna de schakelaar tweemaal in- en uit zal schakelen."}}},"id":"smart_socket_switch"},{"platforms":["local","cloud"],"images":{"large":"/drivers/smart_tunable_led_bulb_E27/assets/images/large.png","small":"/drivers/smart_tunable_led_bulb_E27/assets/images/small.png"},"icon":"/drivers/smart_tunable_led_bulb_E27/assets/icon.svg","name":{"en":"Tunable LED Bulb","nl":"Instelbare Witte Lamp"},"class":"light","capabilities":["onoff","dim","light_temperature"],"capabilitiesOptions":{"dim":{"opts":{"duration":true}},"light_temperature":{"opts":{"duration":true}},"onoff":{"setOnDim":false}},"energy":{"approximation":{"usageOn":9,"usageOff":0.5}},"connectivity":["zigbee"],"zigbee":{"manufacturerName":"Trust International B.V.","productId":"ZLL-ColorTempera","endpoints":{"1":{"clusters":[0,4,6,8,768]}},"learnmode":{"image":"/drivers/smart_tunable_led_bulb_E27/assets/icon.svg","instruction":{"en":"Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 5 times quickly. It will flash twice to indicate it has been reset.","nl":"Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."}}},"id":"smart_tunable_led_bulb_E27"},{"platforms":["local","cloud"],"images":{"large":"/drivers/smart_tunable_led_spot/assets/images/large.png","small":"/drivers/smart_tunable_led_spot/assets/images/small.png"},"icon":"/drivers/smart_tunable_led_spot/assets/icon.svg","name":{"en":"Tunable LED Spot","nl":"Instelbare Witte LED Spot"},"class":"light","capabilities":["onoff","dim","light_temperature"],"capabilitiesOptions":{"dim":{"opts":{"duration":true}},"light_temperature":{"opts":{"duration":true}},"onoff":{"setOnDim":false}},"energy":{"approximation":{"usageOn":6,"usageOff":0.5}},"connectivity":["zigbee"],"zigbee":{"manufacturerName":"Trust International B.V.","productId":"ZLL-ColorTempera","endpoints":{"1":{"clusters":[0,4,6,8,768]}},"learnmode":{"image":"/drivers/smart_tunable_led_spot/assets/icon.svg","instruction":{"en":"Toggle the spot to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the spot by toggling it 5 times quickly. It will flash twice to indicate it has been reset.","nl":"Zet de spot uit en weer aan.\n\nWordt de spot niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de spot aan en uit te zetten. De spot zal twee keer knipperen om aan te geven dat hij is gereset."}}},"id":"smart_tunable_led_spot"},{"platforms":["local","cloud"],"images":{"large":"/drivers/wireless_co_sensor/assets/images/large.png","small":"/drivers/wireless_co_sensor/assets/images/small.png"},"icon":"/drivers/wireless_co_sensor/assets/icon.svg","name":{"en":"Wireless carbon monoxide sensor","nl":"Draadloze koolmonoxide melder"},"class":"sensor","capabilities":["alarm_battery","alarm_co"],"energy":{"batteries":["CR123A"]},"connectivity":["zigbee"],"zigbee":{"manufacturerName":["HEIMAN","Trust"],"productId":["COSensor-EM"],"endpoints":{"1":{"clusters":[0,1,3,1280],"bindings":[1280]}},"learnmode":{"image":"/drivers/wireless_co_sensor/assets/learnmode.svg","instruction":{"en":"Press and hold the pair button on the right side of the sensor for 5 seconds until the LED starts blinking rapidly.","nl":"Houd met een klein pinnetje de knop aan de rechterzijkant van de sensor 5 seconden ingedrukt totdat de LED snel gaat knipperen."}}},"id":"wireless_co_sensor"},{"platforms":["local","cloud"],"images":{"large":"/drivers/wireless_leakage_sensor/assets/images/large.png","small":"/drivers/wireless_leakage_sensor/assets/images/small.png"},"icon":"/drivers/wireless_leakage_sensor/assets/icon.svg","name":{"en":"Wireless leakage sensor","nl":"Draadloze lekkage melder"},"class":"sensor","capabilities":["alarm_battery","alarm_water"],"energy":{"batteries":["AAA","AAA"]},"connectivity":["zigbee"],"zigbee":{"manufacturerName":["HEIMAN","Heiman","Trust"],"productId":["WaterSensor-EM","WATER_TPV14"],"endpoints":{"1":{"clusters":[0,1,3,1280],"bindings":[1280]}},"learnmode":{"image":"/drivers/wireless_leakage_sensor/assets/learnmode.svg","instruction":{"en":"Press and hold the pair button on the right side of the sensor for 5 seconds until the LED starts blinking rapidly.","nl":"Houd met een klein pinnetje de knop aan de rechterzijkant van de sensor 5 seconden ingedrukt totdat de LED snel gaat knipperen."}}},"id":"wireless_leakage_sensor"},{"platforms":["local","cloud"],"images":{"large":"/drivers/wireless_magnetic_contact_sensor/assets/images/large.png","small":"/drivers/wireless_magnetic_contact_sensor/assets/images/small.png"},"icon":"/drivers/wireless_magnetic_contact_sensor/assets/icon.svg","name":{"en":"Wireless magnetic contact sensor","nl":"Draadloze magneet contactsensor"},"class":"sensor","capabilities":["alarm_battery","alarm_contact"],"energy":{"batteries":["CR2032"]},"connectivity":["zigbee"],"zigbee":{"manufacturerName":["ADUROLIGHT","Trust International B.V."],"productId":["CSW_ADUROLIGHT"],"endpoints":{"1":{"clusters":[0,1,1280]}},"learnmode":{"image":"/drivers/wireless_magnetic_contact_sensor/assets/learnmode.svg","instruction":{"en":"Press and hold the pair button on the side of the sensor for 5 seconds until the LED starts blinking rapidly. Then press the button for one second until the LED blinks.","nl":"Houd met een klein pinnetje de knop aan de zijkant van de sensor 5 seconden ingedrukt totdat de LED snel gaat knipperen. Druk daarna nog eenmaal de knop 1 seconde in totdat de LED knippert."}}},"id":"wireless_magnetic_contact_sensor"},{"platforms":["local","cloud"],"images":{"large":"/drivers/wireless_movement_sensor/assets/images/large.png","small":"/drivers/wireless_movement_sensor/assets/images/small.png"},"icon":"/drivers/wireless_movement_sensor/assets/icon.svg","name":{"en":"Wireless movement sensor","nl":"Draadloze bewegingsmelder"},"class":"sensor","capabilities":["alarm_battery","alarm_motion"],"energy":{"batteries":["AAA","AAA"]},"connectivity":["zigbee"],"zigbee":{"manufacturerName":["ADUROLIGHT","Trust International B.V."],"productId":["VMS_ADUROLIGHT"],"endpoints":{"1":{"clusters":[0,1,1280],"bindings":[1280]}},"learnmode":{"image":"/drivers/wireless_movement_sensor/assets/learnmode.svg","instruction":{"en":"Press and hold the pair button on the side of the sensor for 5 seconds until the LED starts blinking rapidly. Then press the button for one second until the LED blinks.","nl":"Houd met een klein pinnetje de knop aan de zijkant van de sensor 5 seconden ingedrukt totdat de LED snel gaat knipperen. Druk daarna nog eenmaal de knop 1 seconde in totdat de LED knippert."}}},"id":"wireless_movement_sensor","settings":[{"id":"auto_reset_enabled","type":"checkbox","value":false,"label":{"en":"Reset motion alarm automatically","nl":"Bewegingsalarm automatisch uitschakelen"},"hint":{"en":"Use automatic reset for motion sensors that do not reset the motion detected state (e.g. the 71170).","nl":"Gebruik een automatische reset voor bewegingssensoren die de bewegingsstatus niet resetten (bv. de 71170)."}},{"id":"auto_reset_time","type":"number","label":{"en":"Motion alarm reset time","nl":"Bewegingsalarm uitschakelen na"},"value":30,"min":1,"max":600,"units":{"en":"seconds","nl":"seconden"},"hint":{"en":"The amount of time to wait after the last detected motion before resetting the motion detected state. Note: this requires \"Reset motion alarm automatically\" to be enabled.","nl":"Het aantal seconden dat moet worden gewacht na de laatste gedetecteerde beweging voordat de bewegingsdetectiestatus wordt gereset. Let op: de instelling \"Bewegingsalarm automatisch uitschakelen\" moet zijn ingeschakeld."}}]},{"platforms":["local","cloud"],"images":{"large":"/drivers/wireless_smoke_sensor/assets/images/large.png","small":"/drivers/wireless_smoke_sensor/assets/images/small.png"},"icon":"/drivers/wireless_smoke_sensor/assets/icon.svg","name":{"en":"Wireless smoke sensor","nl":"Draadloze rookmelder"},"class":"sensor","capabilities":["alarm_battery","alarm_smoke"],"energy":{"batteries":["CR123A"]},"connectivity":["zigbee"],"zigbee":{"manufacturerName":["HEIMAN","Heiman","Trust"],"productId":["SmokeSensor-EM","SMOK_V16"],"endpoints":{"1":{"clusters":[0,1,3,1280],"bindings":[1280]}},"learnmode":{"image":"/drivers/wireless_smoke_sensor/assets/learnmode.svg","instruction":{"en":"Press and hold the pair button on the right side of the sensor for 5 seconds until the LED starts blinking rapidly.","nl":"Houd met een klein pinnetje de knop aan de rechterzijkant van de sensor 5 seconden ingedrukt totdat de LED snel gaat knipperen."}}},"id":"wireless_smoke_sensor"},{"platforms":["local","cloud"],"images":{"large":"/drivers/wireless_temperature_humidity_sensor/assets/images/large.png","small":"/drivers/wireless_temperature_humidity_sensor/assets/images/small.png"},"icon":"/drivers/wireless_temperature_humidity_sensor/assets/icon.svg","name":{"en":"Wireless temperature and humidity sensor","nl":"Draadloze temperatuur en luchtvochtigheid sensor"},"class":"sensor","capabilities":["alarm_battery","measure_temperature","measure_humidity"],"energy":{"batteries":["CR2450"]},"connectivity":["zigbee"],"zigbee":{"manufacturerName":["HEIMAN","Heiman","Trust"],"productId":["TH-EM","HT-EM","TH-T_V14","HT-N","HS1HT-N","HS1HT","HT-EF-3.0","ZTHS-100"],"endpoints":{"1":{"clusters":[0,1,3,9,1026],"bindings":[1,1026]},"2":{"clusters":[1029],"bindings":[1029]}},"learnmode":{"image":"/drivers/wireless_temperature_humidity_sensor/assets/learnmode.svg","instruction":{"en":"Press and hold the pair button on the right side of the sensor for 5 seconds until the LED starts blinking rapidly.","nl":"Houd met een klein pinnetje de knop aan de rechterzijkant van de sensor 5 seconden ingedrukt totdat de LED snel gaat knipperen."}}},"id":"wireless_temperature_humidity_sensor"}]}
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.klikaanklikuit.zigbee",
+  "name": {
+    "en": "Trust Smart Home (Zigbee)",
+    "nl": "KlikAanKlikUit (Zigbee)"
+  },
+  "brandColor": "#404245",
+  "description": {
+    "en": "Maximize your home comfort",
+    "nl": "Voor meer comfort in huis"
+  },
+  "category": [
+    "lights"
+  ],
+  "tags": {
+    "en": [
+      "trust",
+      "klikaanklikuit",
+      "kaku"
+    ],
+    "nl": [
+      "trust",
+      "klikaanklikuit",
+      "kaku"
+    ]
+  },
+  "version": "1.4.1",
+  "compatibility": ">=5.0.0",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "sdk": 3,
+  "support": "https://homey.app/support",
+  "author": {
+    "name": "Athom B.V."
+  },
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "id": "on0",
+        "title": {
+          "en": "Bulb 1 - On button was pressed",
+          "nl": "Lamp 1 - Aan knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "off0",
+        "title": {
+          "en": "Bulb 1 - Off button was pressed",
+          "nl": "Lamp 1 - Uit knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "dim_down0",
+        "title": {
+          "en": "Bulb 1 - Lower brightness was pressed",
+          "nl": "Lamp 1 - Lagere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "dim_up0",
+        "title": {
+          "en": "Bulb 1 - Higher brightness was pressed",
+          "nl": "Lamp 1 - Hogere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "on1",
+        "title": {
+          "en": "Bulb 2 - On button was pressed",
+          "nl": "Lamp 2 - Aan knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "off1",
+        "title": {
+          "en": "Bulb 2 - Off button was pressed",
+          "nl": "Lamp 2 - Uit knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "dim_down1",
+        "title": {
+          "en": "Bulb 2 - Lower brightness was pressed",
+          "nl": "Lamp 2 - Lagere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "dim_up1",
+        "title": {
+          "en": "Bulb 2 - Higher brightness was pressed",
+          "nl": "Lamp 2 - Hogere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "on2",
+        "title": {
+          "en": "Bulb 3 - On button was pressed",
+          "nl": "Lamp 3 - Aan knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "off2",
+        "title": {
+          "en": "Bulb 3 - Off button was pressed",
+          "nl": "Lamp 3 - Uit knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "dim_down2",
+        "title": {
+          "en": "Bulb 3 - Lower brightness was pressed",
+          "nl": "Lamp 3 - Lagere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "dim_up2",
+        "title": {
+          "en": "Bulb 3 - Higher brightness was pressed",
+          "nl": "Lamp 3 - Hogere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "on3",
+        "title": {
+          "en": "Bulb 4 - On button was pressed",
+          "nl": "Lamp 4 - Aan knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "off3",
+        "title": {
+          "en": "Bulb 4 - Off button was pressed",
+          "nl": "Lamp 4 - Uit knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "dim_down3",
+        "title": {
+          "en": "Bulb 4 - Lower brightness was pressed",
+          "nl": "Lamp 4 - Lagere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "dim_up3",
+        "title": {
+          "en": "Bulb 4 - Higher brightness was pressed",
+          "nl": "Lamp 4 - Hogere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "on4",
+        "title": {
+          "en": "Bulb 5 - On button was pressed",
+          "nl": "Lamp 5 - Aan knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "off4",
+        "title": {
+          "en": "Bulb 5 - Off button was pressed",
+          "nl": "Lamp 5 - Uit knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "dim_down4",
+        "title": {
+          "en": "Bulb 5 - Lower brightness was pressed",
+          "nl": "Lamp 5 - Lagere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "dim_up4",
+        "title": {
+          "en": "Bulb 5 - Higher brightness was pressed",
+          "nl": "Lamp 5 - Hogere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "on5",
+        "title": {
+          "en": "All bulbs - On button was pressed",
+          "nl": "Alle lampen - Aan knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "off5",
+        "title": {
+          "en": "All bulbs - Off button was pressed",
+          "nl": "Alle lampen - Uit knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "dim_down5",
+        "title": {
+          "en": "All bulbs - Lower brightness was pressed",
+          "nl": "Alle lampen - Lagere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "dim_up5",
+        "title": {
+          "en": "All bulbs - Higher brightness was pressed",
+          "nl": "Alle lampen - Hogere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote"
+          }
+        ]
+      },
+      {
+        "id": "tamper_on",
+        "title": {
+          "en": "The housing was opened",
+          "nl": "De behuizing is geopend"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wireless_leakage_sensor"
+          }
+        ]
+      },
+      {
+        "id": "tamper_off",
+        "title": {
+          "en": "The housing was closed",
+          "nl": "De behuizing is gesloten"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wireless_leakage_sensor"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/remote/assets/images/large.png",
+        "small": "/drivers/remote/assets/images/small.png"
+      },
+      "icon": "/drivers/remote/assets/icon.svg",
+      "name": {
+        "en": "Remote Control",
+        "nl": "Afstandsbediening"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2450"
+        ]
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": "Trust International B.V.",
+        "productId": [
+          "ZLL-NonColorController"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              6,
+              8,
+              4096
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/remote/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the 0-button for about 20 seconds, until the 5 LEDs blink once. Then press the smart group button until the left, middle and right LEDs start blinking.",
+            "nl": "Druk ongeveer 20 seconden op de 0-knop totdat alle 5 LEDs éénmaal knipperen. Druk daarna op de smart-groepsknop tot de linker, middelste en rechter LEDs knipperen."
+          }
+        }
+      },
+      "id": "remote"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/smart_dimmable_led_bulb_E14/assets/images/large.png",
+        "small": "/drivers/smart_dimmable_led_bulb_E14/assets/images/small.png"
+      },
+      "icon": "/drivers/smart_dimmable_led_bulb_E14/assets/icon.svg",
+      "name": {
+        "en": "Dimmable LED Bulb",
+        "nl": "Dimbare LED Lamp"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 6,
+          "usageOff": 0.5
+        }
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": "Trust International B.V.",
+        "productId": "ZLL-DimmableLigh",
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/smart_dimmable_led_bulb_E14/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 5 times quickly. It will flash twice to indicate it has been reset.",
+            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."
+          }
+        }
+      },
+      "id": "smart_dimmable_led_bulb_E14"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/smart_dimmable_led_bulb_E27/assets/images/large.png",
+        "small": "/drivers/smart_dimmable_led_bulb_E27/assets/images/small.png"
+      },
+      "icon": "/drivers/smart_dimmable_led_bulb_E27/assets/icon.svg",
+      "name": {
+        "en": "Dimmable LED Bulb",
+        "nl": "Dimbare LED Lamp"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 9,
+          "usageOff": 0.5
+        }
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": "Trust International B.V.",
+        "productId": "ZLL-DimmableLigh",
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/smart_dimmable_led_bulb_E27/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 5 times quickly. It will flash twice to indicate it has been reset.",
+            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."
+          }
+        }
+      },
+      "id": "smart_dimmable_led_bulb_E27"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/smart_dimmable_led_spot/assets/images/large.png",
+        "small": "/drivers/smart_dimmable_led_spot/assets/images/small.png"
+      },
+      "icon": "/drivers/smart_dimmable_led_spot/assets/icon.svg",
+      "name": {
+        "en": "Dimmable LED Spot",
+        "nl": "Dimbare LED Spot"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 6,
+          "usageOff": 0.5
+        }
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": "Trust International B.V.",
+        "productId": [
+          "ZLL-DimmableLigh",
+          "ZLL-DimmableLight"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/smart_dimmable_led_spot/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the spot to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the spot by toggling it 5 times quickly. It will flash twice to indicate it has been reset.",
+            "nl": "Zet de spot uit en weer aan.\n\nWordt de spot niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de spot aan en uit te zetten. De spot zal twee keer knipperen om aan te geven dat hij is gereset."
+          }
+        }
+      },
+      "id": "smart_dimmable_led_spot"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/smart_rgb_tunable_led_bulb_E27/assets/images/large.png",
+        "small": "/drivers/smart_rgb_tunable_led_bulb_E27/assets/images/small.png"
+      },
+      "icon": "/drivers/smart_rgb_tunable_led_bulb_E27/assets/icon.svg",
+      "name": {
+        "en": "RGB Tunable LED Bulb",
+        "nl": "RGB LED Lamp"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_hue",
+        "light_saturation",
+        "light_temperature",
+        "light_mode"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_hue": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_saturation": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_temperature": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 9,
+          "usageOff": 0.5
+        }
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": "Trust International B.V.",
+        "productId": "ZLL-ExtendedColo",
+        "endpoints": {
+          "2": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/smart_rgb_tunable_led_bulb_E27/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 5 times quickly. It will flash twice to indicate it has been reset.",
+            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."
+          }
+        }
+      },
+      "id": "smart_rgb_tunable_led_bulb_E27"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/smart_rgb_tunable_led_spot/assets/images/large.png",
+        "small": "/drivers/smart_rgb_tunable_led_spot/assets/images/small.png"
+      },
+      "icon": "/drivers/smart_rgb_tunable_led_spot/assets/icon.svg",
+      "name": {
+        "en": "RGB Tunable LED Spot",
+        "nl": "RGB LED Spot"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_hue",
+        "light_saturation",
+        "light_temperature",
+        "light_mode"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_hue": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_saturation": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_temperature": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 6,
+          "usageOff": 0.5
+        }
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": "Trust International B.V.",
+        "productId": "ZLL-ExtendedColo",
+        "endpoints": {
+          "2": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/smart_rgb_tunable_led_spot/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the spot to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the spot by toggling it 5 times quickly. It will flash twice to indicate it has been reset.",
+            "nl": "Zet de spot uit en weer aan.\n\nWordt de spot niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de spot aan en uit te zetten. De spot zal twee keer knipperen om aan te geven dat hij is gereset."
+          }
+        }
+      },
+      "id": "smart_rgb_tunable_led_spot"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/smart_socket_switch/assets/images/large.png",
+        "small": "/drivers/smart_socket_switch/assets/images/small.png"
+      },
+      "icon": "/drivers/smart_socket_switch/assets/icon.svg",
+      "name": {
+        "en": "Smart Socket Switch",
+        "nl": "Slimme Stopcontact Schakelaar"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": "KlikAanKlikUit",
+        "productId": [
+          "Socket Switch"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              6
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/smart_socket_switch/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the button on the Socket Switch to pair.\n\nIf this did not happen within a few seconds, press the button more than 6 seconds until the LED starts flashing. Press the button again, the socket switch will switch on and off twice.",
+            "nl": "Druk op de knop op de schakelaar om te verbinden.\n\nAls dit niet binnen enkele seconden slaagt, houd dan de knop meer dan 6 seconden ingedrukt totdat de LED begint te knipperen. Druk daarna nogmaals op de knop, waarna de schakelaar tweemaal in- en uit zal schakelen."
+          }
+        }
+      },
+      "id": "smart_socket_switch"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/smart_tunable_led_bulb_E27/assets/images/large.png",
+        "small": "/drivers/smart_tunable_led_bulb_E27/assets/images/small.png"
+      },
+      "icon": "/drivers/smart_tunable_led_bulb_E27/assets/icon.svg",
+      "name": {
+        "en": "Tunable LED Bulb",
+        "nl": "Instelbare Witte Lamp"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_temperature": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 9,
+          "usageOff": 0.5
+        }
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": "Trust International B.V.",
+        "productId": "ZLL-ColorTempera",
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/smart_tunable_led_bulb_E27/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the bulb to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 5 times quickly. It will flash twice to indicate it has been reset.",
+            "nl": "Zet de lamp uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de lamp aan en uit te zetten. De lamp zal twee keer knipperen om aan te geven dat hij is gereset."
+          }
+        }
+      },
+      "id": "smart_tunable_led_bulb_E27"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/smart_tunable_led_spot/assets/images/large.png",
+        "small": "/drivers/smart_tunable_led_spot/assets/images/small.png"
+      },
+      "icon": "/drivers/smart_tunable_led_spot/assets/icon.svg",
+      "name": {
+        "en": "Tunable LED Spot",
+        "nl": "Instelbare Witte LED Spot"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_temperature": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 6,
+          "usageOff": 0.5
+        }
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": "Trust International B.V.",
+        "productId": "ZLL-ColorTempera",
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/smart_tunable_led_spot/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the spot to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the spot by toggling it 5 times quickly. It will flash twice to indicate it has been reset.",
+            "nl": "Zet de spot uit en weer aan.\n\nWordt de spot niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door 5 keer de spot aan en uit te zetten. De spot zal twee keer knipperen om aan te geven dat hij is gereset."
+          }
+        }
+      },
+      "id": "smart_tunable_led_spot"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/wireless_co_sensor/assets/images/large.png",
+        "small": "/drivers/wireless_co_sensor/assets/images/small.png"
+      },
+      "icon": "/drivers/wireless_co_sensor/assets/icon.svg",
+      "name": {
+        "en": "Wireless carbon monoxide sensor",
+        "nl": "Draadloze koolmonoxide melder"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_battery",
+        "alarm_co"
+      ],
+      "energy": {
+        "batteries": [
+          "CR123A"
+        ]
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "HEIMAN",
+          "Trust"
+        ],
+        "productId": [
+          "COSensor-EM"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              3,
+              1280
+            ],
+            "bindings": [
+              1280
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/wireless_co_sensor/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the pair button on the right side of the sensor for 5 seconds until the LED starts blinking rapidly.",
+            "nl": "Houd met een klein pinnetje de knop aan de rechterzijkant van de sensor 5 seconden ingedrukt totdat de LED snel gaat knipperen."
+          }
+        }
+      },
+      "id": "wireless_co_sensor"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/wireless_leakage_sensor/assets/images/large.png",
+        "small": "/drivers/wireless_leakage_sensor/assets/images/small.png"
+      },
+      "icon": "/drivers/wireless_leakage_sensor/assets/icon.svg",
+      "name": {
+        "en": "Wireless leakage sensor",
+        "nl": "Draadloze lekkage melder"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_battery",
+        "alarm_water"
+      ],
+      "energy": {
+        "batteries": [
+          "AAA",
+          "AAA"
+        ]
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "HEIMAN",
+          "Heiman",
+          "Trust"
+        ],
+        "productId": [
+          "WaterSensor-EM",
+          "WATER_TPV14"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              3,
+              1280
+            ],
+            "bindings": [
+              1280
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/wireless_leakage_sensor/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the pair button on the right side of the sensor for 5 seconds until the LED starts blinking rapidly.",
+            "nl": "Houd met een klein pinnetje de knop aan de rechterzijkant van de sensor 5 seconden ingedrukt totdat de LED snel gaat knipperen."
+          }
+        }
+      },
+      "id": "wireless_leakage_sensor"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/wireless_magnetic_contact_sensor/assets/images/large.png",
+        "small": "/drivers/wireless_magnetic_contact_sensor/assets/images/small.png"
+      },
+      "icon": "/drivers/wireless_magnetic_contact_sensor/assets/icon.svg",
+      "name": {
+        "en": "Wireless magnetic contact sensor",
+        "nl": "Draadloze magneet contactsensor"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_battery",
+        "alarm_contact"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "ADUROLIGHT",
+          "Trust International B.V."
+        ],
+        "productId": [
+          "CSW_ADUROLIGHT"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              1280
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/wireless_magnetic_contact_sensor/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the pair button on the side of the sensor for 5 seconds until the LED starts blinking rapidly. Then press the button for one second until the LED blinks.",
+            "nl": "Houd met een klein pinnetje de knop aan de zijkant van de sensor 5 seconden ingedrukt totdat de LED snel gaat knipperen. Druk daarna nog eenmaal de knop 1 seconde in totdat de LED knippert."
+          }
+        }
+      },
+      "id": "wireless_magnetic_contact_sensor"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/wireless_movement_sensor/assets/images/large.png",
+        "small": "/drivers/wireless_movement_sensor/assets/images/small.png"
+      },
+      "icon": "/drivers/wireless_movement_sensor/assets/icon.svg",
+      "name": {
+        "en": "Wireless movement sensor",
+        "nl": "Draadloze bewegingsmelder"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_battery",
+        "alarm_motion"
+      ],
+      "energy": {
+        "batteries": [
+          "AAA",
+          "AAA"
+        ]
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "ADUROLIGHT",
+          "Trust International B.V."
+        ],
+        "productId": [
+          "VMS_ADUROLIGHT"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              1280
+            ],
+            "bindings": [
+              1280
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/wireless_movement_sensor/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the pair button on the side of the sensor for 5 seconds until the LED starts blinking rapidly. Then press the button for one second until the LED blinks.",
+            "nl": "Houd met een klein pinnetje de knop aan de zijkant van de sensor 5 seconden ingedrukt totdat de LED snel gaat knipperen. Druk daarna nog eenmaal de knop 1 seconde in totdat de LED knippert."
+          }
+        }
+      },
+      "id": "wireless_movement_sensor",
+      "settings": [
+        {
+          "id": "auto_reset_enabled",
+          "type": "checkbox",
+          "value": false,
+          "label": {
+            "en": "Reset motion alarm automatically",
+            "nl": "Bewegingsalarm automatisch uitschakelen"
+          },
+          "hint": {
+            "en": "Use automatic reset for motion sensors that do not reset the motion detected state (e.g. the 71170).",
+            "nl": "Gebruik een automatische reset voor bewegingssensoren die de bewegingsstatus niet resetten (bv. de 71170)."
+          }
+        },
+        {
+          "id": "auto_reset_time",
+          "type": "number",
+          "label": {
+            "en": "Motion alarm reset time",
+            "nl": "Bewegingsalarm uitschakelen na"
+          },
+          "value": 30,
+          "min": 1,
+          "max": 600,
+          "units": {
+            "en": "seconds",
+            "nl": "seconden"
+          },
+          "hint": {
+            "en": "The amount of time to wait after the last detected motion before resetting the motion detected state. Note: this requires \"Reset motion alarm automatically\" to be enabled.",
+            "nl": "Het aantal seconden dat moet worden gewacht na de laatste gedetecteerde beweging voordat de bewegingsdetectiestatus wordt gereset. Let op: de instelling \"Bewegingsalarm automatisch uitschakelen\" moet zijn ingeschakeld."
+          }
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/wireless_smoke_sensor/assets/images/large.png",
+        "small": "/drivers/wireless_smoke_sensor/assets/images/small.png"
+      },
+      "icon": "/drivers/wireless_smoke_sensor/assets/icon.svg",
+      "name": {
+        "en": "Wireless smoke sensor",
+        "nl": "Draadloze rookmelder"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_battery",
+        "alarm_smoke"
+      ],
+      "energy": {
+        "batteries": [
+          "CR123A"
+        ]
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "HEIMAN",
+          "Heiman",
+          "Trust"
+        ],
+        "productId": [
+          "SmokeSensor-EM",
+          "SMOK_V16"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              3,
+              1280
+            ],
+            "bindings": [
+              1280
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/wireless_smoke_sensor/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the pair button on the right side of the sensor for 5 seconds until the LED starts blinking rapidly.",
+            "nl": "Houd met een klein pinnetje de knop aan de rechterzijkant van de sensor 5 seconden ingedrukt totdat de LED snel gaat knipperen."
+          }
+        }
+      },
+      "id": "wireless_smoke_sensor"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/wireless_temperature_humidity_sensor/assets/images/large.png",
+        "small": "/drivers/wireless_temperature_humidity_sensor/assets/images/small.png"
+      },
+      "icon": "/drivers/wireless_temperature_humidity_sensor/assets/icon.svg",
+      "name": {
+        "en": "Wireless temperature and humidity sensor",
+        "nl": "Draadloze temperatuur en luchtvochtigheid sensor"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_battery",
+        "measure_temperature",
+        "measure_humidity"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2450"
+        ]
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "HEIMAN",
+          "Heiman",
+          "Trust"
+        ],
+        "productId": [
+          "TH-EM",
+          "HT-EM",
+          "TH-T_V14",
+          "HT-N",
+          "HS1HT-N",
+          "HS1HT",
+          "HT-EF-3.0",
+          "ZTHS-100"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              3,
+              9,
+              1026
+            ],
+            "bindings": [
+              1,
+              1026
+            ]
+          },
+          "2": {
+            "clusters": [
+              1029
+            ],
+            "bindings": [
+              1029
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/wireless_temperature_humidity_sensor/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the pair button on the right side of the sensor for 5 seconds until the LED starts blinking rapidly.",
+            "nl": "Houd met een klein pinnetje de knop aan de rechterzijkant van de sensor 5 seconden ingedrukt totdat de LED snel gaat knipperen."
+          }
+        }
+      },
+      "id": "wireless_temperature_humidity_sensor"
+    }
+  ]
+}
