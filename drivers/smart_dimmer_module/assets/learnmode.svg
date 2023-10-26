@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>nl.klikaanklikuit/driver/ZCM-300/ assets/pair</title>
+        <style type="text/css">
+    	#pair {
+    		animation: pair 6s infinite;
+    	}
+        #led {
+            animation: light 6s infinite;
+        }
+
+    	@keyframes pair {
+    		0%, 15%, 35%, 100%  {
+    			fill: rgba(0,0,0,0);
+    		}
+    		25% {
+    			fill: #0074CC;
+    		}
+    	}
+        @keyframes light {
+    		0%, 15%, 40%, 60%, 80%, 100%  {
+    			fill: rgba(0,0,0,0);
+    		}
+    		50%, 70%, 90% {
+    			fill: #0074CC;
+    		}
+    	}
+    </style>
+    <g id="nl.klikaanklikuit/driver/ZCM-300" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#000000" stroke-width="20" x="10" y="10" width="940" height="940" rx="245"></rect>
+        <rect id="Rectangle" fill="#000000" x="307" y="798" width="66" height="66" rx="10"></rect>
+        <rect id="Rectangle" fill="#000000" x="400" y="798" width="66" height="66" rx="10"></rect>
+        <rect id="Rectangle" fill="#000000" x="493" y="798" width="66" height="66" rx="10"></rect>
+        <rect id="Rectangle" fill="#000000" x="586" y="798" width="66" height="66" rx="10"></rect>
+        <path d="M719,59 C769.257912,59 814.757912,79.3710439 847.693434,112.306566 C880.628956,145.242088 901,190.742088 901,241 L901,719 C901,769.257912 880.628956,814.757912 847.693434,847.693434 C814.757912,880.628956 769.257912,901 719,901 L241,901 C190.742088,901 145.242088,880.628956 112.306566,847.693434 C79.3710439,814.757912 59,769.257912 59,719 L59,241 C59,190.742088 79.3710439,145.242088 112.306566,112.306566 C145.242088,79.3710439 190.742088,59 241,59 L719,59 Z" id="Rectangle" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M300,760 L659,760 C676.120827,760 690,773.879173 690,791 L690,950 L690,950 L269,950 L269,791 C269,773.879173 282.879173,760 300,760 Z" id="Rectangle" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <circle id="pair" fill="#0074CC" cx="188" cy="480" r="31"></circle>
+        <circle id="Oval" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" cx="188" cy="480" r="31"></circle>
+        <circle id="Oval" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" cx="770" cy="480" r="31"></circle>
+        <circle id="Oval" fill="#000000" cx="291" cy="480" r="22"></circle>
+        <circle id="led" fill="rgba(0,0,0,0)" cx="291" cy="480" r="22"></circle>
+    </g>
+</svg>

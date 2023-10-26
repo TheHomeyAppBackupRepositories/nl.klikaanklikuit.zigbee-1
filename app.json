@@ -25,7 +25,7 @@
       "kaku"
     ]
   },
-  "version": "1.4.1",
+  "version": "1.5.0",
   "compatibility": ">=5.0.0",
   "platforms": [
     "local",
@@ -649,6 +649,65 @@
         "cloud"
       ],
       "images": {
+        "large": "/drivers/smart_dimmer_module/assets/images/large.png",
+        "small": "/drivers/smart_dimmer_module/assets/images/small.png"
+      },
+      "icon": "/drivers/smart_dimmer_module/assets/icon.svg",
+      "name": {
+        "en": "Dimmer module",
+        "nl": "Inbouwdimmer"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": "KlikAanKlikUit",
+        "productId": [
+          "Built-in Dimmer"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              6,
+              8
+            ],
+            "bindings": [
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/smart_dimmer_module/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the join button on the dimmer module to pair.\n\nIf this did not happen within a few seconds, press the join button more than 6 seconds until the LED starts flashing. Press the button again, the connected light will switch on and off twice.",
+            "nl": "Druk op de join-knop op de inbouwdimmer om te verbinden.\n\nAls dit niet binnen enkele seconden slaagt, houd dan de join-knop meer dan 6 seconden ingedrukt totdat de LED begint te knipperen. Druk daarna nogmaals op de join-knop, waarna de aangesloten lamp tweemaal in- en uit zal schakelen."
+          }
+        }
+      },
+      "id": "smart_dimmer_module"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
         "large": "/drivers/smart_rgb_tunable_led_bulb_E27/assets/images/large.png",
         "small": "/drivers/smart_rgb_tunable_led_bulb_E27/assets/images/small.png"
       },
@@ -850,6 +909,52 @@
         }
       },
       "id": "smart_socket_switch"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "large": "/drivers/smart_switch_module/assets/images/large.png",
+        "small": "/drivers/smart_switch_module/assets/images/small.png"
+      },
+      "icon": "/drivers/smart_switch_module/assets/icon.svg",
+      "name": {
+        "en": "Switch module",
+        "nl": "Inbouwschakelaar"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "zigbee": {
+        "manufacturerName": "KlikAanKlikUit",
+        "productId": [
+          "Built-in Switch"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              6
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/smart_switch_module/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the join button on the switch module to pair.\n\nIf this did not happen within a few seconds, press the join button more than 6 seconds until the LED starts flashing. Press the button again, the switch will switch on and off twice.",
+            "nl": "Druk op de join-knop op de inbouwschakelaar om te verbinden.\n\nAls dit niet binnen enkele seconden slaagt, houd dan de join-knop meer dan 6 seconden ingedrukt totdat de LED begint te knipperen. Druk daarna nogmaals op de join-knop, waarna de schakelaar tweemaal in- en uit zal schakelen."
+          }
+        }
+      },
+      "id": "smart_switch_module"
     },
     {
       "platforms": [
